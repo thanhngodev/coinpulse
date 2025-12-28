@@ -10,7 +10,7 @@ import { Suspense } from "react";
 
 const Page = () => {
   return (
-    <main className="main-container">
+    <>
       <section className="home-grid">
         <Suspense fallback={<CoinOverviewFallback />}>
           <CoinOverview />
@@ -26,7 +26,7 @@ const Page = () => {
           <Categories />
         </Suspense>
       </section>
-    </main>
+    </>
   );
 };
 
