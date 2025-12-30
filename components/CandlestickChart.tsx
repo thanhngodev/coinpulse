@@ -3,6 +3,7 @@
 import {
   getCandlestickConfig,
   getChartConfig,
+  LIVE_INTERVAL_BUTTONS,
   PERIOD_BUTTONS,
   PERIOD_CONFIG,
 } from "@/constants/common";
@@ -24,6 +25,8 @@ const CandlestickChart = ({
   initialPeriod = "daily",
   liveOhlcv = null,
   mode = "historical",
+  liveInterval,
+  setLiveInterval,
 }: CandlestickChartProps) => {
   const chartContainerRef = useRef<HTMLDivElement | null>(null);
   const chartRef = useRef<IChartApi | null>(null);
@@ -169,7 +172,7 @@ const CandlestickChart = ({
           ))}
         </div>
 
-        {/* {liveInterval && (
+        {liveInterval && (
           <div className="button-group">
             <span className="text-sm mx-2 font-medium text-purple-100/50">
               Update Frequency:
@@ -182,14 +185,14 @@ const CandlestickChart = ({
                     ? "config-button-active"
                     : "config-button"
                 }
-                // onClick={() => setLiveInterval && setLiveInterval(value)}
+                onClick={() => setLiveInterval && setLiveInterval(value)}
                 disabled={isPending}
               >
                 {label}
               </button>
             ))}
           </div>
-        )} */}
+        )}
       </div>
 
       <div ref={chartContainerRef} className="chart" style={{ height }} />
