@@ -5,13 +5,13 @@ A modern cryptocurrency tracking application built with Next.js, providing real-
 ## Screenshots
 
 ### Home Page
-![Home Page](/home.png)
+![Home Page](/public/home.png)
 
 ### List of Coins
-![List of Coins](/coins.png)
+![List of Coins](/public/coins.png)
 
 ### Coin Detail
-![Coin Detail](/coin.png)
+![Coin Detail](/public/coin.png)
 
 ## Features
 
