@@ -1,3 +1,28 @@
+# CoinPulse - Crypto Tracker
+
+A modern cryptocurrency tracking application built with Next.js, providing real-time price updates, market trends, and detailed coin information.
+
+## Screenshots
+
+### Home Page
+![Home Page](/home.png)
+
+### List of Coins
+![List of Coins](/coins.png)
+
+### Coin Detail
+![Coin Detail](/coin.png)
+
+## Features
+
+- Real-time cryptocurrency price tracking
+- Detailed coin information and statistics
+- Responsive design for all devices
+- Dark mode support
+- Built with Next.js and TypeScript
+
+## Getting Started
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
